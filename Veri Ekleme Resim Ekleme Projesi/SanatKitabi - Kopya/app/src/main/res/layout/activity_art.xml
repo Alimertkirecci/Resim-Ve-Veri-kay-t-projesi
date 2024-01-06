@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtActivity">
+
+    <EditText
+        android:id="@+id/artistnameTxt"
+        android:layout_width="277dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="67dp"
+        android:ems="10"
+        android:hint="Sanatçı İsmi"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artnameTxt" />
+
+    <EditText
+        android:id="@+id/yeartxtname"
+        android:layout_width="277dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="148dp"
+        android:ems="10"
+        android:hint="Yapıldığı Tarih"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artistnameTxt" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="375dp"
+        android:onClick="selectimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/select" />
+
+    <EditText
+        android:id="@+id/artnameTxt"
+        android:layout_width="277dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Sanat İsmi"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/artistnameTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/sntKydtbtn"
+        android:layout_width="181dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="54dp"
+        android:background="@color/design_default_color_error"
+        android:backgroundTint="@color/design_default_color_error"
+        android:onClick="saveButtonClick"
+        android:text="Kaydet"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yeartxtname" />
+</androidx.constraintlayout.widget.ConstraintLayout>
